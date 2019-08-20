@@ -1,0 +1,371 @@
+<div class="aui-page page-index">
+  <main class="aui-page-main">
+    <el-row :gutter="15">
+      <el-col :span="16">
+        <!-- 安全预警、安全防护、待办事项 -->
+        <div class="index-section">
+          <el-row :gutter="15">
+            <el-col :span="10">
+              <div class="aui-panel index-security-warning">
+                <div class="aui-panel__hd">安全预警</div>
+                <el-row :gutter="10" class="aui-panel__bd">
+                  <el-col :span="8">
+                    <div class="index-block">
+                      <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                      <div class="index-block__hd">紧急事件</div>
+                    </div>
+                  </el-col>
+                  <el-col :span="8">
+                    <div class="index-block">
+                      <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                      <div class="index-block__hd">漏洞</div>
+                    </div>
+                  </el-col>
+                  <el-col :span="8">
+                    <div class="index-block">
+                      <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                      <div class="index-block__hd">攻击</div>
+                    </div>
+                  </el-col>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="7">
+              <div class="aui-panel index-security-protect">
+                <div class="aui-panel__hd">安全防护</div>
+                <div class="aui-panel__bd">
+                  <div class="index-block index-block--level">
+                    <div class="index-block__hd">主机安全</div>
+                    <div class="index-block__bd"><em class="index-block__value">0</em>件</div>
+                  </div>
+                  <div class="index-block index-block--level">
+                    <div class="index-block__hd">WEB 攻击</div>
+                    <div class="index-block__bd"><a href="#">购买网络安全</a></div>
+                  </div>
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="7">
+              <div class="aui-panel index-undo">
+                <div class="aui-panel__hd">待办事项</div>
+                <div class="aui-panel__bd">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__hd">工单</div>
+                    <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                  </a>
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__hd">续费</div>
+                    <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                  </a>
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__hd">未支付订单</div>
+                    <div class="index-block__bd"><em class="index-block__value">0</em></div>
+                  </a>
+                </div>
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+        <!-- 最近使用的产品 -->
+        <div class="index-section">
+          <div class="aui-panel index-recent">
+            <div class="aui-panel__hd clearfix">
+              <span>最近使用的产品</span>
+              <a href="#" class="f-right fz-xs">
+                <span class="va-middle">操作日志</span>
+                <svg class="icon-svg fz-base" aria-hidden="true"><use xlink:href="#icon-time-circle"></use></svg>
+              </a>
+            </div>
+            <div class="aui-panel__bd">
+              <el-row :gutter="15">
+                <el-col :span="8">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__bd">Web 应用防火墙（网络安全）</div>
+                  </a>
+                </el-col>
+                <el-col :span="8">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__bd">负载均衡</div>
+                  </a>
+                </el-col>
+                <el-col :span="8">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__bd">云服务器 ECS</div>
+                  </a>
+                </el-col>
+                <el-col :span="8">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__bd">对象存储 OSS</div>
+                  </a>
+                </el-col>
+                <el-col :span="8">
+                  <a href="#" class="index-block index-block--level">
+                    <div class="index-block__bd">云监控</div>
+                  </a>
+                </el-col>
+              </el-row>
+            </div>
+          </div>
+        </div>
+        <!-- 我的资源、我的消费、推荐返利 -->
+        <div class="index-section">
+          <div class="aui-panel index-personal">
+            <div class="aui-panel__bd">
+              <el-tabs class="aui-tabs" v-model="indexPersonalTabsActive">
+                <el-tab-pane class="index-product" label="我的资源" name="1">
+                  <el-row :gutter="15">
+                    <el-col :span="8">
+                      <dl class="index-product__list">
+                        <dt>数据库</dt>
+                        <dd><a href="#">云数据库 HybridDB for MySQL</a></dd>
+                        <dd><a href="#">云数据库 HBase 版</dd>
+                        <dd><a href="#">云数据库 HybridDB for PostgreSQL</a></dd>
+                        <dd><a href="#">数据传输服务 DTS</a></dd>
+                      </dl>
+                      <dl class="index-product__list">
+                        <dt>分析</dt>
+                        <dd><a href="#">云数据库 HybridDB for PostgreSQL</a></dd>
+                      </dl>
+                      <dl class="index-product__list">
+                        <dt>大数据（数加）</dt>
+                        <dd><a href="#">DataWorks</a></dd>
+                        <dd><a href="#">机器学习</a></dd>
+                        <dd><a href="#">数据集成</a></dd>
+                        <dd><a href="#">阿里云 Elasticsearch</a></dd>
+                      </dl>
+                    </el-col>
+                    <el-col :span="8">
+                      <dl class="index-product__list">
+                        <dt>存储与CDN</dt>
+                        <dd><a href="#">CDN</a></dd>
+                      </dl>
+                      <dl class="index-product__list">
+                        <dt>域名与网站（万网）</dt>
+                        <dd><a href="#">域名</a></dd>
+                        <dd><a href="#">云解析 DNS</a></dd>
+                        <dd><a href="#">弹性 Web 托管</a></dd>
+                      </dl>
+                    </el-col>
+                    <el-col :span="8">
+                      <dl class="index-product__list">
+                        <dt>网络</dt>
+                        <dd><a href="#">CDN</a></dd>
+                      </dl>
+                      <dl class="index-product__list">
+                        <dt>应用服务</dt>
+                        <dd><a href="#">云效</a></dd>
+                      </dl>
+                      <dl class="index-product__list">
+                        <dt>我的服务</dt>
+                        <dd><a href="#">尊享服务</a></dd>
+                      </dl>
+                    </el-col>
+                  </el-row>
+                  <a href="#" class="index-product__fold">
+                    <span class="va-middle">收起更多产品</span>
+                    <svg class="icon-svg fz-base" aria-hidden="true"><use xlink:href="#icon-down"></use></svg>
+                  </a>
+                </el-tab-pane>
+                <el-tab-pane class="index-consume" label="我的消费" name="2">
+                  <el-row :gutter="15">
+                    <el-col :span="12">
+                      <div class="index-consume__hd">账户概览</div>
+                      <el-row :gutter="10" class="index-consume__bd">
+                        <el-col :span="12">
+                          <div class="index-block index-consume__block">
+                            <div class="index-block__hd">账户余额（元）</div>
+                            <div class="index-block__bd"><em class="index-block__value">0.00</em></div>
+                            <div class="index-block__ft"><el-button type="primary">充值</el-button></div>
+                          </div>
+                        </el-col>
+                        <el-col :span="12">
+                          <a href="#" class="index-block index-block--level">
+                            <div class="index-block__hd">代金券</div>
+                            <div class="index-block__bd"><em class="index-block__value">0</em>张</div>
+                          </a>
+                          <a href="#" class="index-block index-block--level">
+                            <div class="index-block__hd">储值卡</div>
+                            <div class="index-block__bd"><em class="index-block__value">0</em>张</div>
+                          </a>
+                          <a href="#" class="index-block index-block--level">
+                            <div class="index-block__hd">优惠券</div>
+                            <div class="index-block__bd"><em class="index-block__value">0</em>张</div>
+                          </a>
+                        </el-col>
+                      </el-row>
+                    </el-col>
+                    <el-col :span="12">
+                      <div class="index-consume__hd">近期消费</div>
+                      <div class="index-consume__bd">
+                        <div class="index-block index-consume__block">
+                          <div class="index-block__hd">11 月消费</div>
+                          <div class="index-block__bd"><em class="index-block__value">0.00</em></div>
+                          <div class="index-block__ft">参加 <a href="#">最新活动</a>，发现云计算新旅程</div>
+                        </div>
+                      </div>
+                    </el-col>
+                  </el-row>
+                </el-tab-pane>
+                <el-tab-pane class="index-ambassador" label="推荐返利" name="3">
+                  <div class="index-ambassador__hd">
+                    <h3 class="index-ambassador__title">推荐返利</h3>
+                    <p class="index-ambassador__intro">成为云大使，即可享受推荐下单返利，推广任务奖励，云知识云技能培训等阿里云对云大使的多种支持。优秀者更可享受阿里云官方认证与阿里云参观学习等更多专项支持。</p>
+                  </div>
+                  <div class="index-ambassador__bd">
+                    <el-row :gutter="15">
+                      <el-col :span="12">
+                        <div class="index-ambassador__item">
+                          <svg class="index-ambassador__item-icon icon-svg" aria-hidden="true"><use xlink:href="#icon-gift-fill"></use></svg>
+                          <h4 class="index-ambassador__item-title">专享优厚回报</h4>
+                          <p class="index-ambassador__item-intro">不但提供推广返利，更有任务奖金，排名大奖，大使折扣，新产品内测机会等专属奖励。</p>
+                        </div>
+                      </el-col>
+                      <el-col :span="12">
+                        <div class="index-ambassador__item">
+                          <svg class="index-ambassador__item-icon icon-svg" aria-hidden="true"><use xlink:href="#icon-trophy-fill"></use></svg>
+                          <h4 class="index-ambassador__item-title">与阿里云共同成长</h4>
+                          <p class="index-ambassador__item-intro">阿里云将长期扶持云大使尤其是其中优秀者的长期发展，提供相应培训，能力认证等。</p>
+                        </div>
+                      </el-col>
+                    </el-row>
+                    <div class="index-ambassador__ft">
+                      <el-button type="primary">立即加入</el-button>
+                    </div>
+                  </div>
+                </el-tab-pane>
+              </el-tabs>
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <!-- 公告 -->
+        <div class="index-section">
+          <div class="aui-panel index-notice">
+            <div class="aui-panel__bd">
+              <el-tabs class="aui-tabs aui-tabs--flex" v-model="indexNoticeTabsActive">
+                <el-tab-pane label="全部公告" name="1">
+                  <ul class="index-notice__list">
+                    <li><a href="https://www.renren.io/detail/10832" target="_blank">【升级】renren-cloud 1.1 发布：功能增强</a></li>
+                    <li><a href="https://www.renren.io/detail/10781" target="_blank">【升级】renren-security2.0 专业版发布：全新架构升级</a></li>
+                    <li><a href="https://www.renren.io/detail/10313" target="_blank">【协议】renren-security【企业版】授权协议</a></li>
+                  </ul>
+                  <p class="index-notice__more"><a href="#">更多</a></p>
+                </el-tab-pane>
+                <el-tab-pane label="升级" name="2">
+                  <ul class="index-notice__list">
+                    <li><a href="#">【升级】11月11日.com/.net注册局维护通知</a></li>
+                    <li><a href="#">【升级】11月3日、4日商标局服务器维护停止商标递交申请通知</a></li>
+                    <li><a href="#">【升级】11月MQ升级计划通知</a></li>
+                  </ul>
+                  <p class="index-notice__more"><a href="#">更多</a></p>
+                </el-tab-pane>
+                <el-tab-pane label="安全" name="3">
+                  <ul class="index-notice__list">
+                    <li><a href="#">【漏洞预警】最新Apache Struts远程代码执行漏洞(CVE-2016-1000031)</a></li>
+                    <li><a href="#">【漏洞预警】Git服务系统 Gogs 和 Gitea 远程命令执行高危漏洞</a></li>
+                    <li><a href="#">【漏洞预警】Gitlab Wiki API 远程代码执行漏洞CVE-2018-18649</a></li>
+                  </ul>
+                  <p class="index-notice__more"><a href="#">更多</a></p>
+                </el-tab-pane>
+                <el-tab-pane label="备案" name="4">
+                  <ul class="index-notice__list">
+                    <li><a href="#">【备案】云虚拟主机产品备案策略调整通知</a></li>
+                    <li><a href="#">【备案】关于上海市网站公安备案公告</a></li>
+                    <li><a href="#">【备案】轻量应用服务器产品备案策略调整通知</a></li>
+                  </ul>
+                  <p class="index-notice__more"><a href="#">更多</a></p>
+                </el-tab-pane>
+                <el-tab-pane label="其他" name="5">
+                  <ul class="index-notice__list">
+                    <li><a href="#">【其他】云盾内容安全商业化通知</a></li>
+                    <li><a href="#">【异常】北京时间2018年10月25日虚拟主机服务异常通告【已恢复】</a></li>
+                    <li><a href="#">【其他】OSS开放支持HTTP/2通知</a></li>
+                  </ul>
+                  <p class="index-notice__more"><a href="#">更多</a></p>
+                </el-tab-pane>
+              </el-tabs>
+            </div>
+          </div>
+        </div>
+        <!-- 管理助手 -->
+        <div class="index-section">
+          <div class="aui-panel index-assistant">
+            <div class="aui-panel__hd clearfix">
+              <span>管理助手</span>
+              <a href="#" class="f-right fz-xs">查看更多</a>
+            </div>
+            <div class="aui-panel__bd">
+              <div class="index-assistant__item">
+                <div class="index-assistant__item-hd">
+                  <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-robot"></use></svg>
+                </div>
+                <div class="index-assistant__item-bd">
+                  <h4 class="index-assistant__item-title">双11巅峰钜惠</h4>
+                  <p class="index-assistant__item-intro">云产品拼购1折起，拉新赢300万现金红包</p>
+                  <el-button type="primary" plain size="mini">立即拼团</el-button>
+                </div>
+              </div>
+              <div class="index-assistant__item">
+                <div class="index-assistant__item-hd">
+                  <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-instagram"></use></svg>
+                </div>
+                <div class="index-assistant__item-bd">
+                  <h4 class="index-assistant__item-title">2018广东云栖大会</h4>
+                  <p class="index-assistant__item-intro">11月22日广州南丰朗豪酒店，报名进行中</p>
+                  <el-button type="primary" plain size="mini">立即报名</el-button>
+                </div>
+              </div>
+              <div class="index-assistant__item">
+                <div class="index-assistant__item-hd">
+                  <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-apartment"></use></svg>
+                </div>
+                <div class="index-assistant__item-bd">
+                  <h4 class="index-assistant__item-title">推荐好友送云服务器</h4>
+                  <p class="index-assistant__item-intro">邀请好友7.1折起购短信包，即可获赠云服务器</p>
+                  <el-button type="primary" plain size="mini">立即前往</el-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 新产品快报 -->
+        <div class="index-section">
+          <div class="aui-panel index-information">
+            <div class="aui-panel__hd">新产品快报</div>
+            <div class="aui-panel__bd">
+              <ul class="index-information__list">
+                <li><strong>[新产品]</strong>OSS发布同城冗余存储产品（公测）</li>
+                <li><strong>[新地域/可用区]</strong>SQL Server 2008r2 在杭州可用区F+G上线</li>
+                <li><strong>[新地域/可用区]</strong>数据库备份DBS新增开通香港地域</li>
+              </ul>
+              <p class="index-information__more"><a href="#">更多</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 定制资讯 -->
+        <div class="index-section">
+          <el-button class="aui-button--dashed index-btn__custom">
+            <svg class="icon-svg fz-base" aria-hidden="true"><use xlink:href="#icon-time-circle"></use></svg>
+            <span class="va-middle">定制资讯</span>
+          </el-button>
+        </div>
+        <!-- 二维码 -->
+        <div class="index-section">
+          <div class="aui-panel index-code">
+            <div class="aui-panel__bd">
+              <div class="index-code__item">
+                <i class="index-code__item-img"></i>
+                <div class="index-code__item-inner">
+                  <h4 class="index-code__item-title">阿里云 APP</h4>
+                  <p class="index-code__item-intro">随时随地移动管控<br>独有的行业咨询、在线直播<br>更安全，更便捷</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </el-col>
+    </el-row>
+  </main>
+</div>

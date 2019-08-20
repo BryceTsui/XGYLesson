@@ -1,0 +1,66 @@
+<template v-if="step === 1">
+  <h3 class="login-title">找回密码</h3>
+  <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmitHandle()" status-icon>
+    <el-form-item prop="mobile">
+      <el-input v-model="dataForm.mobile" placeholder="手机号码">
+        <span slot="prefix" class="el-input__icon">
+          <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-phone"></use></svg>
+        </span>
+      </el-input>
+    </el-form-item>
+    <el-form-item prop="captcha">
+      <el-row :gutter="20">
+        <el-col :span="14">
+          <el-input v-model="dataForm.captcha" placeholder="验证码">
+            <span slot="prefix" class="el-input__icon">
+              <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-safetycertificate"></use></svg>
+            </span>
+          </el-input>
+        </el-col>
+        <el-col :span="10" class="login-captcha">
+            <img src="../img/captcha.png" alt="">
+        </el-col>
+      </el-row>
+    </el-form-item>
+    <el-form-item prop="smsCaptcha">
+      <el-row :gutter="20">
+        <el-col :span="14">
+          <el-input v-model="dataForm.smsCaptcha" placeholder="短信验证码">
+            <span slot="prefix" class="el-input__icon">
+              <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-safetycertificate"></use></svg>
+            </span>
+          </el-input>
+        </el-col>
+        <el-col :span="10">
+          <el-button class="w-100">获取验证码</el-button>
+        </el-col>
+      </el-row>
+    </el-form-item>
+    <el-form-item>
+      <el-button class="w-100" type="primary" @click="dataFormSubmitHandle()">找回密码</el-button>
+    </el-form-item>
+  </el-form>
+</template>
+<template v-if="step === 2">
+  <h3 class="login-title">重置密码</h3>
+  <el-form :model="dataForm2" :rules="dataRule2" ref="dataForm2" @keyup.enter.native="dataForm2SubmitHandle()" status-icon>
+    <el-form-item prop="password">
+      <el-input v-model="dataForm2.password" type="password" placeholder="新密码">
+        <span slot="prefix" class="el-input__icon">
+          <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-lock"></use></svg>
+        </span>
+      </el-input>
+    </el-form-item>
+    <el-form-item prop="confirmPassword">
+      <el-input v-model="dataForm2.confirmPassword" type="password" placeholder="确认密码">
+        <span slot="prefix" class="el-input__icon">
+          <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-lock"></use></svg>
+        </span>
+      </el-input>
+    </el-form-item>
+    <el-form-item>
+      <el-button class="w-100" type="primary" @click="dataForm2SubmitHandle()">重置密码</el-button>
+    </el-form-item>
+  </el-form>
+</template>
+<p class="login-guide"><a href="./login@@v2.html">转到登录页面？</a></p class="login-guide">
