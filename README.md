@@ -1,10 +1,11 @@
 # XGYLesson
 A personal project of lesson management
+
 ## Login Page
-![](https://github.com/BryceTsui/XGYLesson/blob/master/images/F1.png)
+<img src="/images/F1.png" height="600" width="800" >
 ## Sutdent Home Page
-![](https://github.com/BryceTsui/XGYLesson/blob/master/images/F2.png)
+<img src="/images/F2.png" height="600" width="800" >
 ## Teacher Home Page
-![](https://github.com/BryceTsui/XGYLesson/blob/master/images/F3.png)
+<img src="/images/F3.png" height="600" width="800" >
 ## BBS Page
-![](https://github.com/BryceTsui/XGYLesson/blob/master/images/F4.png)
+<img src="/images/F4.png" height="600" width="800" >
