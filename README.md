@@ -31,11 +31,11 @@ A personal project of lesson management
 
 * FrontEnd
 
-
+![](https://github.com/BryceTsui/XGYLesson/tree/master/images/Structure_FE_CN.png)
 
 * BackEnd
 
-
+![](https://github.com/BryceTsui/XGYLesson/tree/master/images/Structure_BE_CN.png)
 
 ## DataBase ER
 
