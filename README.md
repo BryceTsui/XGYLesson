@@ -2,10 +2,13 @@
 A personal project of lesson management
 
 ## Login Page
-<div>
-![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/Login.mp4)
-  </div>
-
+<iframe 
+    height=450 
+    width=800 
+    src="https://github.com/BryceTsui/XGYLesson/blob/master/gif/Login.mp4" 
+    frameborder=0 
+    allowfullscreen>
+</iframe>
 ## Sutdent Home Page
 
 <div>
