@@ -3,18 +3,40 @@ A personal project of lesson management
 
 ## Login Page
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/login.gif)
-## Sutdent Home Page
 
-<div>
+## Scalable
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/scalable.gif)
 
-  </div>
+## Modes
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/features.gif)
+## Sutdents' Main Features
+``` 
+* Download File
+* Homework
+* Courses
+```
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/mainFeature.gif)
  
+```
+* Add Courses
+```
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/addCourse.gif)
+
+
+## Logout
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/logout.gif)
 ## Teacher Home Page
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/t_main.gif) 
 
-<div>
-
-  </div>
-  
+```
+* publish Course
+```
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/publish.gif) 
+ 
 ## BBS Page
-<div>
-  </div>
+```
+* BBS
+* Add Topic
+* Reply
+```
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/BBS.gif)
