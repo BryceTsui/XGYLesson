@@ -3,7 +3,7 @@ A personal project of lesson management
 
 ## Login Page
 <div>
-![](https://www.loom.com/share/dc1203b6446f4ca6b8496b8a87251a7a)
+![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/Login.mp4)
   </div>
 
 ## Sutdent Home Page
