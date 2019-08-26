@@ -15,7 +15,6 @@ A personal project of lesson management
 
 
 ## Tech
-
 | Key                   | Value       |
 | --------------------- | ----------- |
 | BackEnd Language      | Java        |
@@ -31,16 +30,18 @@ A personal project of lesson management
 
 * FrontEnd
 
-![](https://github.com/BryceTsui/XGYLesson/tree/master/images/Structure_FE_CN.png)
-
+![](https://github.com/BryceTsui/XGYLesson/blob/master/images/Structure_FE_CN.png)
 * BackEnd
 
-![](https://github.com/BryceTsui/XGYLesson/tree/master/images/Structure_BE_CN.png)
+![](https://github.com/BryceTsui/XGYLesson/blob/master/images/Structure_BE_CN.png)
 
 ## DataBase ER
 
 
 
+![](https://github.com/BryceTsui/XGYLesson/blob/master/images/ER_EN.png)
+
+![](https://github.com/BryceTsui/XGYLesson/blob/master/images/ER_CN.png)
 
 
 
