@@ -2,7 +2,7 @@
 A personal project of lesson management
 
 ## Login Page
-[![Watch the video]](https://www.loom.com/share/dc1203b6446f4ca6b8496b8a87251a7a)
+[![Watch the video]](https://github.com/BryceTsui/XGYLesson/blob/master/gif/Login.mp4)
 ## Sutdent Home Page
 
 <div>
