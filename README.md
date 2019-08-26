@@ -1,5 +1,6 @@
 # XGYLesson
 A personal project of lesson management
+！[1](https://img.shields.io/github/issues/BryceTsui/XGYLesson)![2](https://img.shields.io/github/forks/BryceTsui/XGYLesson)![3](https://img.shields.io/github/stars/BryceTsui/XGYLesson)
 
 ## Environment
 
