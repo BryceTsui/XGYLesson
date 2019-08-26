@@ -45,17 +45,17 @@ A personal project of lesson management
 
 
 
-
-## Login Page
+## Display(* Those gif files below are a little big, and you may want seconds to load them)
+* Login Page
 
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/login.gif)
 
-## Scalable
+* Scalable
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/scalable.gif)
 
-## Modes
+* Modes
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/features.gif)
-## Sutdents' Main Features
+* Sutdents' Main Features
 ``` 
 * Download File
 * Homework
@@ -69,9 +69,9 @@ A personal project of lesson management
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/addCourse.gif)
 
 
-## Logout
+* Logout
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/logout.gif)
-## Teacher Home Page
+* Teacher Home Page
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/t_main.gif) 
 
 ```
@@ -79,7 +79,7 @@ A personal project of lesson management
 ```
 ![](https://github.com/BryceTsui/XGYLesson/blob/master/gif/publish.gif) 
 
-## BBS Page
+* BBS Page
 ```
 * BBS
 * Add Topic
