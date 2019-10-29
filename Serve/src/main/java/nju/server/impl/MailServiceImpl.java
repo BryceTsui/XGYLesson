@@ -43,7 +43,8 @@ public class MailServiceImpl implements MailService {
             //2、通过session得到transport对象
             Transport ts = session.getTransport();
             //3、连上邮件服务器，需要发件人提供邮箱的用户名和密码进行验证
-            ts.connect("smtp.163.com", "nju_rj_xgy@163.com", "wsXGY813");
+            //原163邮箱，防止盗号，改为*
+            ts.connect("smtp.163.com", "*****", "****");
             //4、创建邮件
             VerifyCodeUtils verifyCodeUtils = new VerifyCodeUtils();
             String code = verifyCodeUtils.generate();
@@ -107,7 +108,7 @@ public class MailServiceImpl implements MailService {
         MimeMessage message = new MimeMessage(session);
         // 设置邮件的基本信息
         //发件人
-        message.setFrom(new InternetAddress("nju_rj_xgy@163.com"));
+        message.setFrom(new InternetAddress("****@163.com"));
         //收件人
         message.setRecipient(Message.RecipientType.TO, new InternetAddress(address));
         //邮件标题
@@ -143,7 +144,7 @@ public class MailServiceImpl implements MailService {
             //2、通过session得到transport对象
             Transport ts = session.getTransport();
             //3、连上邮件服务器，需要发件人提供邮箱的用户名和密码进行验证
-            ts.connect("smtp.163.com", "nju_rj_xgy@163.com", "wsXGY813");
+            ts.connect("smtp.163.com", "********", "***");
             //4、创建邮件
             Message message = createStringMail(session,address,content,title);
             //5、发送邮件
